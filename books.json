@@ -1,0 +1,154 @@
+{
+    "books": {
+        "1": {
+            "id": 1,
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "isbn": "9780061120084"
+        },
+        "2": {
+            "id": 2,
+            "title": "1984",
+            "author": "George Orwell",
+            "isbn": "9780451524935"
+        },
+        "3": {
+            "id": 3,
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "isbn": "9780743273565"
+        },
+        "4": {
+            "id": 4,
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "isbn": "9781503290563"
+        },
+        "5": {
+            "id": 5,
+            "title": "Moby-Dick",
+            "author": "Herman Melville",
+            "isbn": "9781503280786"
+        },
+        "6": {
+            "id": 6,
+            "title": "War and Peace",
+            "author": "Leo Tolstoy",
+            "isbn": "9781853260629"
+        },
+        "7": {
+            "id": 7,
+            "title": "Crime and Punishment",
+            "author": "Fyodor Dostoevsky",
+            "isbn": "9780486415871"
+        },
+        "8": {
+            "id": 8,
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "isbn": "9780316769488"
+        },
+        "9": {
+            "id": 9,
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "isbn": "9780345339683"
+        },
+        "10": {
+            "id": 10,
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "isbn": "9780060850524"
+        },
+        "11": {
+            "id": 11,
+            "title": "Fahrenheit 451",
+            "author": "Ray Bradbury",
+            "isbn": "9781451673319"
+        },
+        "12": {
+            "id": 12,
+            "title": "The Odyssey",
+            "author": "Homer",
+            "isbn": "9780140268867"
+        },
+        "13": {
+            "id": 13,
+            "title": "The Iliad",
+            "author": "Homer",
+            "isbn": "9780140275360"
+        },
+        "14": {
+            "id": 14,
+            "title": "Wuthering Heights",
+            "author": "Emily Bronte",
+            "isbn": "9780486292564"
+        },
+        "15": {
+            "id": 15,
+            "title": "Jane Eyre",
+            "author": "Charlotte Bronte",
+            "isbn": "9780141441146"
+        },
+        "16": {
+            "id": 16,
+            "title": "Dracula",
+            "author": "Bram Stoker",
+            "isbn": "9780486411095"
+        },
+        "17": {
+            "id": 17,
+            "title": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde",
+            "isbn": "9780141442464"
+        },
+        "18": {
+            "id": 18,
+            "title": "The Count of Monte Cristo",
+            "author": "Alexandre Dumas",
+            "isbn": "9780140449266"
+        },
+        "19": {
+            "id": 19,
+            "title": "Frankenstein",
+            "author": "Mary Shelley",
+            "isbn": "9780486282114"
+        },
+        "20": {
+            "id": 20,
+            "title": "Les Misérables",
+            "author": "Victor Hugo",
+            "isbn": "9780451419439"
+        },
+        "21": {
+            "id": 21,
+            "title": "Anna Karenina",
+            "author": "Leo Tolstoy",
+            "isbn": "9780143035008"
+        },
+        "22": {
+            "id": 22,
+            "title": "Don Quixote",
+            "author": "Miguel de Cervantes",
+            "isbn": "9780060934347"
+        },
+        "23": {
+            "id": 23,
+            "title": "The Brothers Karamazov",
+            "author": "Fyodor Dostoevsky",
+            "isbn": "9780374528379"
+        },
+        "24": {
+            "id": 24,
+            "title": "Meditations",
+            "author": "Marcus Aurelius",
+            "isbn": "9780140449334"
+        },
+        "25": {
+            "id": 25,
+            "title": "The Stranger",
+            "author": "Albert Camus",
+            "isbn": "9780679720201"
+        }
+    }
+}
