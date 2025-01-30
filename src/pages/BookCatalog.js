@@ -4,6 +4,8 @@ import { axiosDB } from '../axiosConfig';
 const BookCatalog = () => {
   const [books, setBooks] = useState([]);
   const [newBook, setNewBook] = useState({ title: '', author: '', isbn: '' });
+  const [editingBookId, setEditingBookId] = useState(null);
+  const [editedTitle, setEditedTitle] = useState('');
 
   const fetchBooks = async () => {
     try {
@@ -46,6 +48,22 @@ const BookCatalog = () => {
     }
   };
 
+  const handleEditBook = (id, currentTitle) => {
+    setEditingBookId(id);
+    setEditedTitle(currentTitle);
+  };
+
+  const handleUpdateBook = async (id) => {
+    try {
+      await axiosDB.patch(`/books/${id}.json`, { title: editedTitle });
+      setEditingBookId(null);
+      setEditedTitle('');
+      fetchBooks();
+    } catch (error) {
+      console.error('Error updating book:', error);
+    }
+  };
+
   return (
     <div>
       <h1>Book Catalog</h1>
@@ -70,9 +88,22 @@ const BookCatalog = () => {
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {books.map((book) => (
           <div key={book.id} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', width: '200px' }}>
-            <h3>{book.title}</h3>
-            <p>{book.author}</p>
-            <p>{book.isbn}</p>
+            {editingBookId === book.id ? (
+              <div>
+                <input
+                  value={editedTitle}
+                  onChange={(e) => setEditedTitle(e.target.value)}
+                />
+                <button onClick={() => handleUpdateBook(book.id)}>Save</button>
+              </div>
+            ) : (
+              <div>
+                <h3>{book.title}</h3>
+                <p>{book.author}</p>
+                <p>{book.isbn}</p>
+                <button onClick={() => handleEditBook(book.id, book.title)}>Edit</button>
+              </div>
+            )}
             <button onClick={() => handleDeleteBook(book.id)}>Delete</button>
           </div>
         ))}
